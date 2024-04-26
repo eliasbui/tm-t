@@ -1,0 +1,85 @@
+<div class="body">
+  <div class="form-group">
+    <div *ngIf="!keyLoginAuto" class="description">
+      <form
+        [formGroup]="loginForm"
+        (ngSubmit)="onSubmit()"
+        class="description-body"
+      >
+        <div class="title">Đăng nhập tài khoản</div>
+        <div class="input-group mb-20">
+          <label>Email</label>
+          <input
+            formControlName="username"
+            autofocus
+            type="text"
+            placeholder="Email"
+            (keydown.enter)="enter($event)"
+          />
+          <mat-error
+            *ngIf="submitted && !f.username.valid && f.username.errors.required"
+          >
+            {{ commonErrorCode.REQUIRED | translate }}
+          </mat-error>
+        </div>
+        <div class="input-group mb-20">
+          <label>{{ "login.password" | translate }}</label>
+          <div class="ipt-group_pw">
+            <input
+              formControlName="password"
+              placeholder="{{ 'login.password' | translate }}"
+              [type]="showPw ? 'text' : 'password'"
+              (keydown.enter)="enter($event)"
+            />
+            <i class="material-icons pw-icon" (click)="togglePw()">
+              <span *ngIf="showPw">visibility</span>
+              <span *ngIf="!showPw">visibility_off</span>
+            </i>
+            <mat-error
+              *ngIf="
+                submitted && !f.password.valid && f.password.errors.required
+              "
+            >
+              {{ commonErrorCode.REQUIRED | translate }}
+            </mat-error>
+          </div>
+        </div>
+        <div class="description-body-radio-group login-group-form-remember">
+          <label for="remember" class="lb-container"
+            >{{ "login.remember-me" | translate }}
+            <input
+              id="remember"
+              type="checkbox"
+              formControlName="remember_me"
+            />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="login-error" *ngIf="submitted && error_message">
+          <small class="text-danger">{{ error_message }}</small>
+        </div>
+        <div class="description-body-button pt-1">
+          <button class="mb-30 btn-login">
+            {{ "login.title" | translate }}
+          </button>
+          <div class="description-footer">
+            <a class="text-center mb-30" (click)="redirect()">{{
+              "login.forgot-password" | translate
+            }}</a>
+          </div>
+        </div>
+      </form>
+      <div class="description-text">
+        <h4>Quyền lợi thành viên</h4>
+        <div class="subtitle">
+          <p>Vận chuyển siêu tốc</p>
+          <p>Vận chuyển siêu tốc</p>
+          <p>Vận chuyển siêu tốc</p>
+          <p>Vận chuyển siêu tốc</p>
+          <p>Vận chuyển siêu tốc</p>
+        </div>
+        <a routerLink="/register">Đăng ký</a>
+      </div>
+    </div>
+  </div>
+</div>

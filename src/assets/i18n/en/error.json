@@ -1,0 +1,94 @@
+{
+  "error_code": {
+    "login": {
+      "error_01": "The username or password is incorrect.",
+      "error_02": "The account is locked.",
+      "error_99": "The system is temporarily down. Please contact the administrator.",
+      "error_88": "The requested information is invalid.",
+      "error_03": "Email information or phone number does not exist.",
+      "error_04": "The system does not yet support sending OTP Code via SMS. Please try again with email.",
+      "error_05": "The authentication transaction does not exist or has expired.",
+      "error_06": "The Authentication Code is incorrect.",
+      "error_07": "The user does not exist or is locked.",
+      "error_11": "The number of OTP submissions allowed is exceeded.",
+      "error 100": "Account has been locked due to overdue password change. Please contact the administrator.",
+      "error_105": "Enter the wrong password 5 times, your account will be locked. Please contact the administrator."
+    },
+    "forgot": {
+      "sussess_00": "The new password has been updated.",
+      "error_11": "The number of OTP submissions allowed is exceeded.",
+      "error_02": "The account is locked.",
+      "error_99": "The system is temporarily down. Please contact the administrator.",
+      "error_88": "The requested information is invalid.",
+      "error_03": "Email information does not exist.",
+      "error_04": "The system does not yet support sending OTP Code via SMS. Please try again with email.",
+      "error_05": "Expired OTP or type over 3 times. Please press Send OTP button.",
+      "error_06": "The Authentication Code is incorrect.",
+      "error_07": "The user does not exist or is locked."
+    },
+    "changepassword": {
+      "sussess_00": "The new password has been updated.",
+      "error_06": "Your old password is incorrect.",
+      "error_-1": "You should return to the login page and click the Forgot password button to proceed.",
+      "error_99": "The system is temporarily down. Please contact the administrator.",
+      "error_88": "The requested information is invalid.",
+      "format": {
+        "lowercase": "Lowercase",
+        "uppercase": "Uppercase",
+        "min": "Minimum 8 characters",
+        "special": "Special characters",
+        "number": "Numbers",
+        "utf8": "Valid characters"
+      }
+    },
+    "submerchant": {
+      "error_08": "The acceptor name already exists. Please enter another name.",
+      "new_00": "Create new successfully.",
+      "edit_00": "The {{nameSubMerchant}} information has been updated.",
+      "active_00": "Activation successful",
+      "error_09": "The management unit information is incorrect.",
+      "error_10": "A representative email already exists.",
+      "error_05": "The payment method information is incorrect.",
+      "error_04": "Payment unit not found.",
+      "error_11": "The status of the payment acceptance unit has not been activated.",
+      "error_01": "The date format is incorrect.",
+      "error_02": "No matching data found.",
+      "error_99": "The system is temporarily down. Please contact the administrator.",
+      "error_22": "The administrative unit information is incorrect.",
+      "error_88": "The requested information is invalid.",
+      "deactive": "The unit has been temporarily switched to lock.",
+      "edit_basic": "Basic information has been updated successfully",
+      "edit_other": "Other information has been updated successfully"
+    },
+    "risks": {
+      "account_format": "The account number / wallet is malformed",
+      "account_length": "The account / wallet number has at least 8 characters",
+      "bank_number_length": "The number of cards has at least 16 characters",
+      "bank_number_format": "Invalid bank card number"
+    },
+    "qr_code": {
+      "new_00": "Create new successfully.",
+      "edit_00": "The QR Code information has been updated.",
+      "delete_00": "Remove QR information successfully.",
+      "error_01": "Infor Merchant incorrect.",
+      "error_02": "QR type incorrect.",
+      "error_03": "Product code already exists.",
+      "error_04": "QR Merchant already exists.",
+      "error_05": "Staff code already exists.",
+      "error_06": "ID QR Code already exists.",
+      "error_08": "Status incorrect.",
+      "error_09": "QR code does not exist.",
+      "error_10": "The date information is incorrect",
+      "error_88": "The requested information is invalid.",
+      "error_99": "The system is temporarily down. Please contact the administrator.",
+      "empty-sub-merchant": "All Merchant have QR Code. Please check again!"
+    },
+    "form": {
+      "requiredField": "This field is required",
+      "emailPattern": "Not a valid emailaddress",
+      "phoneNumberPattern": "Not a valid phone number",
+      "passwordPattern": "Your password must be from 8 to 20 characters long, must contain at least 1 uppercase character, 1 lowercase character, 1 numeric character and 1 special character",
+      "passwordMismatch": "Passwords do not khớp!"
+    }
+  }
+}

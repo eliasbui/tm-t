@@ -1,0 +1,152 @@
+<div class="body">
+  <div class="form-group">
+    <div *ngIf="!keyLoginAuto" class="description">
+      <form
+        [formGroup]="registerForm"
+        (ngSubmit)="onSubmit()"
+        class="description-body"
+      >
+        <div class="title">Đăng ký tài khoản</div>
+        <div class="input-group mb-20" [class.error]="isFieldInvalid('fullName')">
+          <label>{{ "register.full-name" | translate }}</label>
+          <input
+            formControlName="fullName"
+            type="text"
+            placeholder="{{ 'register.full-name' | translate }}"
+          />
+          <mat-error *ngIf="!f['fullName'].valid && f['fullName'].touched">
+            {{ "error_code.form.requiredField" | translate }}
+          </mat-error>
+        </div>
+        <div class="input-group mb-20" [class.error]="isFieldInvalid('email')">
+          <label>Email</label>
+          <input
+            formControlName="email"            
+            type="text"
+            placeholder="Email"
+          />
+          <mat-error
+            *ngIf="
+              !f['email'].valid &&
+              f['email'].errors.required &&
+              f['email'].touched
+            "
+          >
+            {{ commonErrorCode.REQUIRED | translate }}
+          </mat-error>
+          <mat-error
+            *ngIf="
+              !f['email'].valid &&
+              f['email'].errors.pattern &&
+              f['email'].touched
+            "
+          >
+            {{ "error_code.form.emailPattern" | translate }}
+          </mat-error>
+        </div>
+        <div class="input-group mb-20" [class.error]="isFieldInvalid('phoneNumber')">
+          <label>{{ "register.phone-number" | translate }}</label>
+          <input
+            formControlName="phoneNumber"
+            type="text"
+            placeholder="{{ 'register.phone-number' | translate }}"
+          />
+          <mat-error
+            *ngIf="
+              !f['phoneNumber'].valid &&
+              f['phoneNumber'].errors.required &&
+              f['phoneNumber'].touched
+            "
+          >
+            {{ "error_code.form.requiredField" | translate }}
+          </mat-error>
+          <mat-error
+            *ngIf="
+              !f['phoneNumber'].valid &&
+              f['phoneNumber'].errors.pattern &&
+              f['phoneNumber'].touched
+            "
+          >
+            {{ "error_code.form.phoneNumberPattern" | translate }}
+          </mat-error>
+        </div>
+        <div class="input-group mb-20" [class.error]="isFieldInvalid('password')">
+          <label>{{ "register.password" | translate }}</label>
+          <div class="ipt-group_pw">
+            <input
+              formControlName="password"
+              placeholder="{{ 'register.password' | translate }}"
+              [type]="showPw ? 'text' : 'password'"
+              autocomplete="password"
+            />
+            <i class="material-icons pw-icon" (click)="togglePw()">
+              <span *ngIf="showPw">visibility</span>
+              <span *ngIf="!showPw">visibility_off</span>
+            </i>
+            <mat-error
+            *ngIf="
+              !f['password'].valid &&
+              f['password'].errors.required &&
+              f['password'].touched
+            "
+          >
+            {{ "error_code.form.requiredField" | translate }}
+          </mat-error>
+          <mat-error
+            *ngIf="
+              !f['password'].valid &&
+              f['password'].errors.pattern &&
+              f['password'].touched
+            "
+          >
+            {{ "error_code.form.passwordPattern" | translate }}
+          </mat-error>
+          </div>
+        </div>
+        <div class="input-group mb-20" [class.error]="isFieldInvalid('confirmPassword')">
+          <label>{{ "register.confirm-password" | translate }}</label>
+          <div class="ipt-group_pw">
+            <input
+              formControlName="confirmPassword"
+              autocomplete="confirmPassword"
+              placeholder="{{ 'register.confirm-password' | translate }}"
+              [type]="showCfPw ? 'text' : 'password'"
+            />
+            <i class="material-icons pw-icon" (click)="toggleCfPw()">
+              <span *ngIf="showCfPw">visibility</span>
+              <span *ngIf="!showCfPw">visibility_off</span>
+            </i>
+            <mat-error
+            *ngIf="
+              registerForm.errors &&
+              registerForm.errors.passwordMismatch &&
+              f['confirmPassword'].touched
+            "
+          >
+            {{ "error_code.form.passwordMismatch" | translate }}
+          </mat-error>
+          </div>
+        </div>
+        <div class="login-error" *ngIf="submitted && error_message">
+          <small class="text-danger">{{ error_message }}</small>
+        </div>
+        <div class="description-body-button pt-1">
+          <button class="mb-30 btn-login">
+            {{ "register.title" | translate }}
+          </button>
+        </div>
+      </form>
+      <div class="description-text">
+        <h4>Quyền lợi thành viên</h4>
+        <div class="subtitle">
+          <p>Vận chuyển siêu tốc</p>
+          <p>Vận chuyển siêu tốc</p>
+          <p>Vận chuyển siêu tốc</p>
+          <p>Vận chuyển siêu tốc</p>
+          <p>Vận chuyển siêu tốc</p>
+        </div>
+        <a routerLink="/login">Đăng nhập</a>
+      </div>
+    </div>
+  </div>
+</div>

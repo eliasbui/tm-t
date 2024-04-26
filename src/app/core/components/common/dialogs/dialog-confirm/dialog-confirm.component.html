@@ -1,0 +1,20 @@
+<mat-card-title class="mat-title-dialog text-center mb-20 common-confirm-dialog">
+    {{title}}
+    <div class="btn-close" [mat-dialog-close]="true">
+      <i class="material-icons">close</i>
+    </div>
+  </mat-card-title>
+  
+  <div class="mb-10 row d-flex no-wrap">
+    <div class="col-xs-4">
+      <i class="material-icons" style="font-size: 50px;">warning</i>
+    </div>
+    <div class="col-xs-8 w-100">
+      <p class="text-center padding-left-5" *ngIf="message!==null"  [innerHtml]="message"></p>
+     <p class="text-center" *ngIf="confirm!==null">{{confirm}}</p>
+    </div>
+   </div>
+   <div class="row d-flex justify-content-center">
+     <button  type="button" [mat-dialog-close]="true" mat-raised-button class="btn-cancel text-white mr-2" (click)="onNoClick()"><i class="material-icons">close</i>&nbsp;{{'title_no'|translate}}</button>
+     <button mat-raised-button class="btn-save text-white button-submit" [mat-dialog-close]="true" (click)="onYesClick()"><i class="material-icons">save</i>&nbsp;{{'title_yes'|translate}}</button>
+</div>

@@ -1,0 +1,106 @@
+@import "../../../styles/ultilities/variable.color";
+@import "../../../styles/ultilities/functions.scss";
+@import "../../../styles/ultilities/variable";
+
+.dqdt-sidebar {
+  margin-top: 0px;
+  position: relative;
+  z-index: 9;
+
+  .cate-menu-coll {
+    .title {
+      margin-left: -8px;
+      width: calc(100% + 16px);
+      font-size: 18px;
+      padding-top: 7px !important;
+    }
+  }
+
+  .nav-horizontal.cate-menu {
+    height: auto !important;
+  }
+}
+
+.white-border-10 {
+  background: #FFF;
+  border-radius: 10px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px !important;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.padding-8 {
+  padding: 8px !important;
+}
+
+.padding-15 {
+  padding: 15px !important;
+}
+
+.margin-bottom-8 {
+  margin-bottom: 8px !important;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none outside;
+}
+
+.nav-horizontal .item_big>li {
+  padding: 8px 0 8px 10px;
+}
+
+.list_product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  height: auto;
+  @include max-screen($xl) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  @include max-screen($md) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include max-screen($sm) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include max-screen($sx) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.module-filter {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 20px;
+  background: $main-color;
+  color: #fff;
+  padding: 5px 10px;
+
+  span {
+    font-size: 12px;
+    color: #fff;
+  }
+}
+
+.aside-filter .filter-container {
+  margin-bottom: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.aside-item .aside-title {
+  position: relative;
+  font-weight: 600;
+  margin-bottom: 10px;
+}

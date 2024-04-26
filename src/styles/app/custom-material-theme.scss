@@ -1,0 +1,142 @@
+@import "./ultilities/_variable.scss";
+@import "./ultilities/_variable.color.scss";
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: darkcyan !important;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle,
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,
+.mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+  background-color: darkcyan !important;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: $main-color !important;
+}
+
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: $main-color !important;
+}
+
+.mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: $main-color !important;
+}
+
+.mat-input-element {
+  caret-color: $main-color !important;
+}
+
+.custom-mat-radio-search {
+  .mat-radio-group {
+    display: inline-flex !important;
+  }
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+
+.mat-input-element,
+.mat-select-value {
+  height: 18px;
+  caret-color: initial !important;
+}
+
+.mat-form-field-label {
+  height: 19px;
+}
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+  color: rgba(0, 0, 0, 0.87) !important;
+}
+
+.mat-card-title {
+  font-size: 20px;
+}
+
+.material-icons {
+  font-size: 18px;
+}
+
+.mat-card-header-text {
+  margin: 0 !important;
+}
+
+.mat-select-placeholder,
+.mat-form-field-appearance-legacy .mat-form-field-label,
+.mat-form-field.mat-form-field-invalid .mat-form-field-label {
+  color: #495057;
+  opacity: 0.8;
+}
+
+.mat-radio-button .mat-radio-ripple,
+.mat-checkbox .mat-checkbox-ripple {
+  height: 0 !important;
+  width: 0 !important;
+}
+
+.mat-expansion-panel-body {
+  padding: 0 16px 16px !important;
+}
+
+.mat-expansion-panel-header {
+  padding-left: 16px !important;
+  min-height: 56px !important;
+}
+
+.mat-select-arrow {
+  color: rgba(0, 0, 0, 0.54) !important;
+}
+
+// .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+//   color: rgba(0, 0, 0, 0.42) !important;
+// }
+
+.mat-form-field.mat-form-field-invalid .mat-select-arrow {
+  color: rgba(0, 0, 0, 0.42) !important;
+}
+
+.mat-form-field-appearance-standard .mat-form-field-ripple,
+.mat-form-field-appearance-legacy .mat-form-field-ripple {
+  height: 1px !important;
+  transition: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .mat-card-title {
+    font-size: 16px !important;
+  }
+}
+
+.mat-option:not(.mat-option-disabled):hover {
+  background-color: $main-color !important;
+  color: #fff;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar {
+  background-color: $main-color;
+}
+
+.mat-icon {
+  height: initial !important;
+
+  &.sub-item-icon {
+    color: rgba(0, 0, 0, 0.87);
+  }
+}
+
+// .mat-form-field-infix {
+//   border-top: 13px solid transparent !important;
+// }
+
+.mat-dialog-container {
+  padding-top: 12px !important;
+  padding-bottom: 16px !important;
+}
+
+.mat-card-content {
+  margin-bottom: 6px !important;
+}

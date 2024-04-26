@@ -1,0 +1,344 @@
+<div class="container_layout">
+  <div class="row">
+    <aside class="dqdt-sidebar sidebar left-content col-xl-2 col-lg-3 left">
+      <div
+        class="nav-horizontal cate-menu cate-menu-coll white-border-10 margin-bottom-20 padding-8 position-relative"
+      >
+        <div class="title border-bottom padding-15 weight-600 margin-bottom-8">
+          Danh mục
+        </div>
+        <ul class="item_big">
+          <li class="nav-item" *ngFor = "let item of dataCate">
+            <a
+              class="a-img lazyload_bg loaded"
+              (click) = "onChangeCate(item.id)"
+              >{{ item.name }}</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="filter-content aside-filter">
+        <div class="module-filter border-radius-10">
+          Lọc sản phẩm<span class="d-block">Tìm kiếm dễ dàng chính xác</span>
+        </div>
+        <div class="filter-container">
+          <div class="filter-container__selected-filter" style="display: none">
+            <div class="filter-container__selected-filter-header clearfix">
+              <span class="filter-container__selected-filter-header-title"
+                ><i class="fa fa-arrow-down hidden-sm-up"></i> Bạn chọn</span
+              >
+              <a
+                href="javascript:void(0)"
+                onclick="clearAllFiltered()"
+                class="filter-container__clear-all"
+                >Bỏ hết <i class="fa fa-angle-right"></i
+              ></a>
+            </div>
+            <div class="filter-container__selected-filter-list">
+              <ul></ul>
+            </div>
+          </div>
+          <!-- Lọc giá -->
+          <aside class="aside-item filter-price margin-bottom-20">
+            <div class="aside-title">Theo mức giá</div>
+            <div class="aside-content content_price">
+              <ul>
+                <li
+                  class="filter-item filter-item--check-box filter-item--green"
+                >
+                  <span>
+                    <label data-filter="200-000d" for="filter-duoi-200-000d">
+                      <input
+                        type="checkbox"
+                        id="filter-duoi-200-000d"
+                        data-group="Khoảng giá"
+                        data-field="price_min"
+                        data-text="Dưới 200.000đ"
+                        value="(<200000)"
+                        data-operator="OR"
+                      />
+                      <i class="fa"></i>
+                      Dưới 200.000đ
+                    </label>
+                  </span>
+                </li>
+
+                <li
+                  class="filter-item filter-item--check-box filter-item--green"
+                >
+                  <span>
+                    <label
+                      data-filter="500-000d"
+                      for="filter-200-000d-500-000d"
+                    >
+                      <input
+                        type="checkbox"
+                        id="filter-200-000d-500-000d"
+                        data-group="Khoảng giá"
+                        data-field="price_min"
+                        data-text="200.000đ - 500.000đ"
+                        value="(>=200000 AND <=500000)"
+                        data-operator="OR"
+                      />
+                      <i class="fa"></i>
+                      Từ 200.000đ - 500.000đ
+                    </label>
+                  </span>
+                </li>
+
+                <li
+                  class="filter-item filter-item--check-box filter-item--green"
+                >
+                  <span>
+                    <label
+                      data-filter="1-000-000d"
+                      for="filter-500-000d-1-000-000d"
+                    >
+                      <input
+                        type="checkbox"
+                        id="filter-500-000d-1-000-000d"
+                        data-group="Khoảng giá"
+                        data-field="price_min"
+                        data-text="500.000đ - 1.000.000đ"
+                        value="(>=500000 AND <=1000000)"
+                        data-operator="OR"
+                      />
+                      <i class="fa"></i>
+                      Từ 500.000đ - 1 triệu
+                    </label>
+                  </span>
+                </li>
+
+                <li
+                  class="filter-item filter-item--check-box filter-item--green"
+                >
+                  <span>
+                    <label
+                      data-filter="2-000-000d"
+                      for="filter-1-000-000d-2-000-000d"
+                    >
+                      <input
+                        type="checkbox"
+                        id="filter-1-000-000d-2-000-000d"
+                        data-group="Khoảng giá"
+                        data-field="price_min"
+                        data-text="1.000.000đ - 2.000.000đ"
+                        value="(>=1000000 AND <=2000000)"
+                        data-operator="OR"
+                      />
+                      <i class="fa"></i>
+                      Từ 1 - 2 triệu
+                    </label>
+                  </span>
+                </li>
+
+                <li
+                  class="filter-item filter-item--check-box filter-item--green"
+                >
+                  <span>
+                    <label
+                      data-filter="5-000-000d"
+                      for="filter-2-000-000d-5-000-000d"
+                    >
+                      <input
+                        type="checkbox"
+                        id="filter-2-000-000d-5-000-000d"
+                        data-group="Khoảng giá"
+                        data-field="price_min"
+                        data-text="2.000.000đ - 5.000.000đ"
+                        value="(>=2000000 AND <=5000000)"
+                        data-operator="OR"
+                      />
+                      <i class="fa"></i>
+                      Từ 2 - 5 triệu
+                    </label>
+                  </span>
+                </li>
+                <li
+                  class="filter-item filter-item--check-box filter-item--green"
+                >
+                  <span>
+                    <label data-filter="5-000-000d" for="filter-tren5-000-000d">
+                      <input
+                        type="checkbox"
+                        id="filter-tren5-000-000d"
+                        data-group="Khoảng giá"
+                        data-field="price_min"
+                        data-text="Trên 5.000.000đ"
+                        value="(>5000000)"
+                        data-operator="OR"
+                      />
+                      <i class="fa"></i>
+                      Trên 5 triệu
+                    </label>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <!-- End Lọc giá -->
+          <!-- Lọc Thương hiệu -->
+          <aside class="aside-item filter-vendor margin-bottom-20">
+            <div class="aside-title">Thương hiệu</div>
+            <div class="aside-content filter-group">
+              <ul>
+                <li
+                  class="filter-item filter-item--check-box filter-item--green vendorxxx"
+                >
+                  <span>
+                    <label for="filter-apple">
+                      <input
+                        type="checkbox"
+                        id="filter-apple"
+                        data-group="Hãng"
+                        data-field="vendor"
+                        data-text="Apple"
+                        value="(Apple)"
+                        data-operator="OR"
+                      />
+                      <i class="fa"></i>
+                      <span>Apple</span>
+                    </label>
+                  </span>
+                </li>
+                <li
+                  class="filter-item filter-item--check-box filter-item--green vendorxxx"
+                >
+                  <span>
+                    <label for="filter-asus">
+                      <input
+                        type="checkbox"
+                        id="filter-asus"
+                        data-group="Hãng"
+                        data-field="vendor"
+                        data-text="Asus"
+                        value="(Asus)"
+                        data-operator="OR"
+                      />
+                      <i class="fa"></i>
+                      <span>Asus</span>
+                    </label>
+                  </span>
+                </li>
+                <li
+                  class="filter-item filter-item--check-box filter-item--green vendorxxx"
+                >
+                  <span>
+                    <label for="filter-samsung">
+                      <input
+                        type="checkbox"
+                        id="filter-samsung"
+                        data-group="Hãng"
+                        data-field="vendor"
+                        data-text="Samsung"
+                        value="(Samsung)"
+                        data-operator="OR"
+                      />
+                      <i class="fa"></i>
+                      <span>Samsung</span>
+                    </label>
+                  </span>
+                </li>
+                <li
+                  class="filter-item filter-item--check-box filter-item--green vendorxxx"
+                >
+                  <span>
+                    <label for="filter-xiaomi">
+                      <input
+                        type="checkbox"
+                        id="filter-xiaomi"
+                        data-group="Hãng"
+                        data-field="vendor"
+                        data-text="Xiaomi"
+                        value="(Xiaomi)"
+                        data-operator="OR"
+                      />
+                      <i class="fa"></i>
+                      <span>Xiaomi</span>
+                    </label>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <!-- End Lọc Thương hiệu -->
+          <!-- Lọc Loại -->
+          <aside class="aside-item filter-type margin-bottom-20">
+            <div class="aside-title">Tìm theo loại</div>
+            <div class="aside-content filter-group">
+              <ul>
+                <li
+                  class="filter-item filter-item--check-box filter-item--green"
+                >
+                  <span>
+                    <label for="filter-dien-thoai">
+                      <input
+                        type="checkbox"
+                        id="filter-dien-thoai"
+                        data-group="PRODUCT_TYPE"
+                        data-field="product_type.filter_key"
+                        data-text=""
+                        value='("Điện thoại")'
+                        data-operator="OR"
+                      />
+                      <i class="fa"></i>
+                      Điện thoại
+                    </label>
+                  </span>
+                </li>
+                <li
+                  class="filter-item filter-item--check-box filter-item--green"
+                >
+                  <span>
+                    <label for="filter-iphone">
+                      <input
+                        type="checkbox"
+                        id="filter-iphone"
+                        data-group="PRODUCT_TYPE"
+                        data-field="product_type.filter_key"
+                        data-text=""
+                        value='("iPhone")'
+                        data-operator="OR"
+                      />
+                      <i class="fa"></i>
+                      iPhone
+                    </label>
+                  </span>
+                </li>
+                <li
+                  class="filter-item filter-item--check-box filter-item--green"
+                >
+                  <span>
+                    <label for="filter-laptop">
+                      <input
+                        type="checkbox"
+                        id="filter-laptop"
+                        data-group="PRODUCT_TYPE"
+                        data-field="product_type.filter_key"
+                        data-text=""
+                        value='("Laptop")'
+                        data-operator="OR"
+                      />
+                      <i class="fa"></i>
+                      Laptop
+                    </label>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </aside>
+    <div class="main_container collection col-xl-10 col-lg-9 right">
+      <div class="list_product">
+        <div *ngFor="let item of dataProduct">
+          <ite-product-item [title]="item.productName" [image]="item.urlImage[0]" [price]="item.price" (click)="detail(item.id)"></ite-product-item>
+        </div>
+      </div>
+      <ite-pagination [page]="page" [pageSize]="pageSize" [total]="total" (pageChange)="changePage($event)"
+      (pageSizeChange)="onPageSizeChange($event)" [loading]="loading">
+    </ite-pagination>
+    </div>
+  </div>
+</div>

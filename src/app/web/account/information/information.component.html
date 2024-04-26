@@ -1,0 +1,50 @@
+<div class="bg-acc">
+  <div class="col_2-heading">
+    <h4>Hồ sơ</h4>
+  </div>
+  <div class="profile">
+    <div class="profile-tile">
+      <div class="avatar-container">
+        <img src="./../../../../assets/images/avatar_2x.png" class="avatar" alt="user" />
+      </div>
+      <div class="profile-detail">
+        <div class="fullname">Nguyễn Văn Hải</div>
+        <div class="info">
+          <div class="col-title text-secondary">Số điện thoại:</div>
+          <div class="col-info ml-2">0971398473</div>
+        </div>
+        <div class="info">
+          <div class="col-title text-secondary">Email:</div>
+          <div class="col-info ml-2">nguyenhai20112003@gmail.com</div>
+        </div>
+        <div class="info">
+          <div class="col-title text-secondary">Giới tính:</div>
+          <div class="col-info ml-2">
+            <div>Nam</div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-edit">
+        <div>
+          <button
+            type="submit"
+            class="btn btn-edit"
+            (click)="editProfile()"
+          >
+            Cập nhật thông tin
+          </button>
+        </div>
+        <div>
+          <button
+            type="submit"
+            (click)="openChangePasswordModal()"
+            class="btn btn-edit"
+          >
+            Đổi mật khẩu
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

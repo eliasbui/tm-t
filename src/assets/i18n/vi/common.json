@@ -1,0 +1,421 @@
+{
+  "add_to_cart": {
+    "code_00": "Thêm giỏ hàng thành công",
+    "code_01": "Thêm giỏ hàng thất bại"
+  },
+  "settings": "Cài đặt",
+  "profile": "Hồ sơ",
+  "logout": "Đăng xuất",
+  "homepage": "Trang chủ",
+  "dashboard": "Bảng điều khiển",
+  "languageList": {
+    "Vietnamese": "Tiếng Việt",
+    "English": "Tiếng Anh"
+  },
+  "language": "Ngôn ngữ",
+  "title_confirm_dialog": "Thông báo",
+  "title_yes": "Đồng ý",
+  "title_no": "Hủy",
+  "warning_language": "Vui lòng chọn ngôn ngữ ưa thích cho Bảng điều khiển của bạn, bao gồm định dạng ngày, giờ và số",
+  "selectlanguage": "Lựa chọn ngôn ngữ",
+  "phone": "Điện thoại",
+  "cancel": "Thoát",
+  "sendemail": "Gửi Email",
+  "departmentLang": "Phòng",
+  "save": "Lưu",
+  "changeimage": {
+    "title": "Thay đổi ảnh đại diện",
+    "chooseImageButton": "Chọn ảnh",
+    "message": {
+      "wrongFormat": "Tệp không đúng định dạng",
+      "imageWrongFormat": "Ảnh không đúng định dạng",
+      "wrongFormatFile": "Vui lòng chọn file JPEG/JPG/PNG/PDF !",
+      "risk_wrongFormatFile": "Vui lòng chọn file XLSX/XLS !",
+      "overSize": "File vượt quá kích thước tối đa 2MB"
+    },
+    "text": "Vui lòng chọn ảnh định dạng JPG, JPEG, PNG với kích thước tối đa 2MB.",
+    "size": "File vượt quá kích thước tối đa",
+    "format": "File không đúng định dạng",
+    "success": "Thay đổi ảnh đại diện thành công",
+    "note": "Click chuột vào ảnh để đổi ảnh đại diện"
+  },
+  "createdate": "Ngày tạo",
+  "changeInfor": {
+    "title": "Cập nhật thông tin tài khoản",
+    "name": "Tên hiển thị",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "adress": "Địa chỉ"
+  },
+  "forgotpassword": "Quên mật khẩu?",
+  "emailaddress": "Địa chỉ email",
+  "resetpassword": "Đặt lại mật khẩu",
+  "changethere": "Bạn cần thay đổi mật khẩu cho lần đăng nhập đầu tiên",
+  "resethere": "Vui lòng điền địa chỉ email bạn đã đăng ký trên hệ thống",
+  "expire_otp": "OTP sẽ hết hạn sau 5 phút",
+  "otp_expired": "OTP đã hết hạn. Vui lòng nhấn nút Gửi OTP để nhận mã OTP mới",
+  "get_otp": "Gửi lại OTP",
+  "dialogSuccessResetPw": {
+    "submit": "Đồng ý",
+    "mes-1": "Mã OTP đã được gửi đến email của quý khách.",
+    "mes-2": "Quý khách vui lòng nhập mã OTP để lấy lại mật khẩu."
+  },
+  "service-info": {
+    "title-main": "Quản lý thông tin dịch vụ",
+    "btn_edit": "Cập nhật",
+    "btn_update": "Cập nhật",
+    "btn_cancel": "Hủy",
+    "title_dialog": "Thông báo",
+    "msg_dialog": "Yêu cầu thay đổi thông tin dịch vụ của bạn đang trong quá trình chờ phê duyệt. Chúng tôi sẽ phản hồi trong vòng 72h làm việc.",
+    "msg_thank": "Cảm ơn bạn đã tin tưởng sử dụng dịch vụ của chúng tôi.",
+    "btn_dialog": "Đóng",
+    "message": {
+      "require": "Vui lòng chọn ít nhất 1 PTTT."
+    },
+    "info": {
+      "title_prod": "Thông tin tích hợp môi trường thật",
+      "title_test": "Thông tin tích hợp môi trường thử nghiệm",
+      "btn_refresh": "Làm mới",
+      "publish_key": "Mã kết nối",
+      "secret_key": "Mã bí mật",
+      "merchantId": "Mã ĐVCNTT"
+    },
+    "service": {
+      "title": "Thông tin dịch vụ thanh toán",
+      "title_type": "Phương thức thanh toán",
+      "type": "Hình thức thanh toán",
+      "chanel": "Kênh giao dịch",
+      "struc": "Cấu hình tích hợp",
+      "payment_service": "Dịch vụ thanh toán",
+      "up_service": "Dịch vụ gia tăng"
+    },
+    "fee": {
+      "title": "Thông tin phí dịch vụ",
+      "payment_type": "Phương thức thanh toán",
+      "fee_maintain": "Phí duy trì DV",
+      "fee_action": "Phí xử lý giao dịch",
+      "fee_pay": "Phí thanh toán",
+      "fee_refund": "Phí hoàn trả"
+    },
+    "errors": {
+      "99": "Hệ thống tạm thời gián đoạn. Vui lòng liên hệ ban quản trị.",
+      "88": "Dữ liệu yêu cầu không hợp lệ",
+      "11": "Trạng thái ĐVCNTT không đúng",
+      "03": "Không tồn tại thông tin về merchant này"
+    },
+    "success": {
+      "payment-method": "Yêu cầu cập nhật PTTT đã được ghi nhận. Vui lòng chờ phê duyệt."
+    }
+  },
+  "changePassword": {
+    "changePassword": "Đổi mật khẩu",
+    "currentPassword": "Mật khẩu hiện tại",
+    "newPassword": "Mật khẩu mới",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "confirmPasswordWarning": "Để xác nhận, nhập lại mật khẩu mới.",
+    "newPasswordWarning": "Mật khẩu phải có 6-50 ký tự và không được chứa dấu cách.",
+    "confirm": "Xác nhận",
+    "placeholder": {
+      "old": "Nhập mật khẩu hiện tại",
+      "new": "Nhập mật khẩu mới",
+      "re-new": "Nhập lại mật khẩu mới"
+    },
+    "firstLogin": "Đổi mật khẩu lần đầu đăng nhập",
+    "period": {
+      "text-1": "Mật khẩu tài khoản của bạn trên hệ thống sẽ hết hạn trong",
+      "text-2": "ngày nữa",
+      "text-3": "Vui lòng vào chức năng đổi mật khẩu để đổi lại mật khẩu. Tài khoản của bạn sẽ bị khóa nếu quá hạn đổi mật khẩu!"
+    }
+  },
+  "breadcrumb": {
+    "dashboard": "Bảng điều khiển",
+    "usermanage": "Quản lý người dùng",
+    "department": "Quản lý đơn vị",
+    "profile": "Quản lý tài khoản",
+    "detail": "Chi tiết"
+  },
+  "title": {
+    "usermanage": "Quản lý người dùng"
+  },
+  "profileAccount": {
+    "language": "Ngôn ngữ",
+    "phone": "Số điện thoại",
+    "email": "Địa chỉ email",
+    "unit": "ĐVCNTT",
+    "save": "Cập nhật",
+    "username": "Tên đăng nhập",
+    "fullName": "Họ và tên",
+    "merchant": "ĐVCNTT",
+    "createdDate": "Ngày tạo",
+    "edit": "Cập nhật",
+    "editlanguage": "Cập nhật ngôn ngữ",
+    "defaultLanguage": "Ngôn ngữ hiển thị mặc định",
+    "history": "Lịch sử hoạt động",
+    "seeMore": "Xem thêm",
+    "validator": {
+      "required": "Đây là trường bắt buộc nhập",
+      "success": "Thông tin được cập nhật thành công",
+      "successPassword": "Mật khẩu đã được thay đổi thành công",
+      "strongPassword": "Mật khẩu không đúng định dạng",
+      "equalPassword": "Mật khẩu mới không trùng khớp",
+      "currentPass": "Mật khẩu hiện tại không đúng",
+      "lengthPass": "Mật khẩu phải chứa ít nhất 6 ký tự"
+    }
+  },
+  "error": {
+    "require": "Đây là trường bắt buộc",
+    "email-pattern": "Email không đúng định dạng",
+    "email-invalid": "Địa chỉ email chưa được đăng ký trên hệ thống. Vui lòng kiểm tra lại!",
+    "format-email-invalid": "Email không đúng định dạng. Vui lòng kiểm tra lại!",
+    "phone-invalid": "Số điện thoại chưa được đăng ký trên hệ thống. Vui lòng kiểm tra lại!",
+    "format-phone-invalid": "Số điện thoại không đúng định dạng (bao gồm từ 10-11 số). Vui lòng kiểm tra lại!",
+    "phone-pattern": " Số điện thoại không đúng định dạng",
+    "password-mismatch": "Mật khẩu không khớp",
+    "minlength-6": "Mật khẩu phải có độ dài từ 6 đến 50 kí tự.",
+    "maxlength": "Đoạn kí tự bạn vừa nhập quá dài.",
+    "invalid-format": "Mật khẩu không đúng định dạng.",
+    "invalid-format-ip": "Địa chỉ IP không đúng định dạng.",
+    "special-characters": "Không được chứa kí tự đặc biệt",
+    "not_match": "Mật khẩu không trùng khớp",
+    "number-pattern": "Đây là trường nhập số",
+    "minlength-9": "Số CMND phải có độ dài 9 hoặc 12 số",
+    "minLengthPhone": "Số điện thoại không đúng định dạng",
+    "uppercase": "Không đúng định dạng (nhập chữ in hoa không dấu)",
+    "minLengthPan": "Tài khoản phải có độ dài từ 8 đến 19 số",
+    "agentNameFormat": "Tên người đại diện không đúng định dạng",
+    "taxCodeFormat": "Mã số thuế phải có độ dài 10 hoặc 13 chữ số",
+    "agentIdentityFormat": "CMND phải có độ dài 9 hoặc 12 số",
+    "panLength": "Tài khoản thụ hưởng phải có độ dài từ 8 đến 19 ký tự",
+    "panFormat": "Tài khoản thụ hưởng không đúng định dạng",
+    "phoneFormat": "Số điện thoại không đúng định dạng",
+    "webFormat": "Địa chỉ website không đúng định dạng",
+    "name-format": "Không đúng định dạng (không chứa ký tự đặc biệt, toàn khoảng trắng và tối đa 50 kí tự).",
+    "amount-format": "Giá sản phẩm tối đa có 9 chữ số.",
+    "amount-min": "Giá sản phẩm phải lớn hơn 0."
+  },
+  "notifications": {
+    "new": "Thông báo mới",
+    "markRead": "Đánh dấu đã đọc",
+    "markUnread": "Đánh dấu chưa đọc",
+    "delete": "Xóa",
+    "seeAll": "Xem tất cả",
+    "title": "Thông báo",
+    "action": "Tác vụ",
+    "noSelected": "Chưa có thông báo nào được chọn",
+    "read": "Đã đọc",
+    "unread": "Chưa đọc",
+    "deleted": "Đã xóa",
+    "refresh": "Làm mới",
+    "back": "Quay lại",
+    "filter": {
+      "title": "Lọc",
+      "all": "Tất cả",
+      "trans": "Giao dịch",
+      "update": "Cập nhật"
+    },
+    "errors": {
+      "99": "Hệ thống tạm thời gián đoạn. Vui lòng liên hệ ban quản trị."
+    },
+    "noData": "Hiện tại không có thông báo mới nào"
+  },
+  "commonAction": {
+    "add": "Thêm mới",
+    "edit": "Cập nhật",
+    "export": "Xuất file",
+    "search": "Tìm kiếm",
+    "cancel": "Hủy",
+    "save": "Lưu",
+    "update": "Cập nhật",
+    "total": "Tổng số",
+    "noData": "Không tìm thấy kết quả nào",
+    "inQR": "In mã QR",
+    "action": "Xác nhận",
+    "close": "Đóng",
+    "download": "Tải xuống",
+    "copyURL": "Sao chép link",
+    "view": "Xem chi tiết",
+    "resetPassword": "Đặt lại mật khẩu"
+  },
+  "unit": {
+    "title": "Quản lý Đơn vị",
+    "unitName": "Tên đơn vị",
+    "email": "Địa chỉ email",
+    "status": "Trạng thái",
+    "createdDate": "Ngày tạo",
+    "detail": {
+      "basicInfo": "Thông tin cơ bản"
+    },
+    "addUnit": "Thêm mới đơn vị",
+    "updateUnit": "Cập nhật thông tin đơn vị",
+    "fileName": "DonVi_",
+    "statusList": {
+      "Active": "Hoạt động",
+      "Locked": "Khóa tài khoản"
+    },
+    "addSuccess": "Thêm mới đơn vị thành công",
+    "editSuccess": "Chỉnh Cập nhật đơn vị thành công"
+  },
+  "left-menu": {
+    "dashboard": "Bảng điều khiển",
+    "transaction": {
+      "manager": "Quản lý giao dịch",
+      "payment": "Thanh toán",
+      "refund": "Hoàn trả"
+    },
+    "report": {
+      "title": "Báo cáo",
+      "revenue": "Doanh thu",
+      "money-transfer": "Chuyển tiền",
+      "finalization": "Thanh quyết toán",
+      "fee": "Phí"
+    },
+    "cross-check": "Đối soát",
+    "ruin-manager": {
+      "title": "Quản lý rủi ro - BlackList",
+      "account": "Tài khoản/Ví",
+      "card": "Thẻ ngân hàng",
+      "bin": "Dải BIN thẻ",
+      "ip": "Địa chỉ IP",
+      "business": "Loại hình kinh doanh",
+      "transaction": "Giao dịch nghi ngờ"
+    },
+    "monitoring": "Monitoring",
+    "mcc-manager": "Quản lý MCC",
+    "dvcntt-manager": {
+      "manager": "Quản lý ĐVCNTT",
+      "profile": "Hồ sơ ĐVCNTT",
+      "manager-dvcntt": "Quản lý ĐVCNTT con",
+      "qrcode": "Quản lý mã QR"
+    },
+    "payment-link": "Payment link",
+    "create-order": "Tạo đơn hàng",
+    "user-mangager": "Quản lý người dùng",
+    "dept-manager": "Quản lý Đơn vị",
+    "pttt-manager": "Quản lý PTTT",
+    "cost-manager": {
+      "manager": "Quản lý Phí",
+      "for-dvcntt": "Dành cho ĐVCNTT",
+      "for-agency": "Dành cho Đại lý"
+    },
+    "trans-channel": "Quản lý Kênh giao dịch",
+    "tcph-manager": "Quản lý TCPH",
+    "tctt-manager": "Quản lý TCTT",
+    "agency-manager": "Quản lý Đại lý",
+    "service-info": "Quản lý TT dịch vụ",
+    "store-profile": "Hồ sơ đại lý",
+    "search-store": "Tra cứu ĐVCNTT",
+    "e-wallet": "Quản lý ví điện tử",
+    "wallet-register": "Khách hàng đăng ký ví",
+    "wallet-link": "Liên kết/hủy liên kết ví",
+    "wallet-cashin": "Giao dịch nạp tiền",
+    "wallet-cashout": "Giao dịch rút tiền",
+    "wallet-transfer": "Giao dịch chuyển tiền",
+    "wallet-behalf-payment": "Giao dịch thanh toán",
+    "e-wallet-report": {
+      "title": "Báo cáo ví điện tử",
+      "total-wallet": "Số lượng đăng ký ví",
+      "total-transaction": "Số lượng giao dịch",
+      "top-transaction": "SLGD/GTGD lớn"
+    }
+  },
+  "dashboard-page": {
+    "title": "Kết quả kinh doanh hôm nay",
+    "chart-title": "Tổng doanh thu",
+    "transaction-title": "Giao dịch mới nhất",
+    "success_status": "Thành công",
+    "refund_status": "Hoàn trả",
+    "transactions": "Giao dịch",
+    "yesterday": "So với hôm qua",
+    "last-month": "So với cùng kỳ tháng trước",
+    "total-revenue": "Tổng doanh thu",
+    "transaction-payment": "Giao dịch thanh toán",
+    "transaction-refund": "Giao dịch hoàn trả",
+    "transaction-page": {
+      "transaction-code": "Mã giao dịch",
+      "partner": "Đối tác",
+      "bank": "Ngân hàng",
+      "amount": "Tổng tiền",
+      "merchant": "ĐVCNTT",
+      "transaction-status": "Trạng thái",
+      "time": "Thời gian",
+      "notfound": "Không tìm thấy giao dịch nào"
+    },
+    "fail": "Không thành công",
+    "success": "Thành công",
+    "wait": "Chờ thanh toán",
+    "day": "Ngày",
+    "today": "Hôm nay",
+    "month": "Tháng",
+    "million": "Triệu",
+    "revenue": "Doanh thu",
+    "order": "Đơn hàng",
+    "week": "Tuần",
+    "seemore": "Xem thêm",
+    "top5": "Top 5 ĐVCNTT kinh doanh tốt nhất",
+    "transaction": "giao dịch",
+    "revenue-chart": {
+      "amount": "SLGD",
+      "value": "GTGD",
+      "no-transaction": "Chưa có giao dịch nào"
+    },
+    "payment-status": {
+      "success": "Thành công",
+      "fail": "Thất bại",
+      "wait": "Đang xử lý",
+      "recorded": "Đã ghi nhận",
+      "no-transaction": "Chưa có giao dịch thanh toán nào"
+    },
+    "refund": {
+      "no-transaction": "Chưa có giao dịch hoàn trả nào"
+    },
+    "no-statistic": "Chưa có dữ liệu thống kê"
+  },
+  "status": {
+    "pending": "Chờ thanh toán",
+    "unsuccess": "Không thành công",
+    "success": "Thành công"
+  },
+  "login": {
+    "user-name": "Tên đăng nhập",
+    "password": "Mật khẩu",
+    "remember-me": "Ghi nhớ",
+    "title": "Đăng nhập",
+    "forgot-password": "Quên mật khẩu?",
+    "or": "Hoặc",
+    "register": "Đăng ký"
+  },
+  "register": {
+    "full-name": "Họ và tên",
+    "password": "Mật khẩu",
+    "confirm-password": "Nhập lại mật khẩu",
+    "phone-number": "Số điện thoại",
+    "title": "Đăng ký",
+    "cancel": "Hủy"
+  },
+  "reset_pw": {
+    "title": "Đặt lại mật khẩu",
+    "ref": "Mã giao dịch",
+    "otp": "Mã OTP",
+    "repw": "Nhập lại mật khẩu mới",
+    "newpw": "Nhập Mật khẩu mới",
+    "title-newpw": "Mật khẩu mới",
+    "title-repw": "Xác nhận mật khẩu mới",
+    "success_get_otp": "Gửi lại mã OTP thành công. Vui lòng kiểm tra địa chỉ email để nhận mã OTP mới.",
+    "fail_get_otp": "Gửi lại mã OTP không thành công. Vui lòng thử lại."
+  },
+  "pagination": {
+    "size": "Hiển thị"
+  },
+  "all": {
+    "status": "Tất cả trạng thái",
+    "merchant": "Tất cả ĐVCNTT",
+    "sub-merchant": "Tất cả ĐVCNTT con",
+    "qr": "Tất cả mã QR"
+  },
+  "function-role": "Bạn không có quyền thực hiện chức năng này",
+  "page-role": "Bạn không có quyền truy cập trang này",
+  "return-page": "Trở về trang chính",
+  "session-timeout": "Phiên đăng nhập đã hết hạn. Bạn vui lòng đăng nhập lại để tiếp tục sử dụng hệ thống.",
+  "date-from": "Từ",
+  "date-to": "đến"
+}

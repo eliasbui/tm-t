@@ -1,0 +1,58 @@
+{
+  "footer": {
+    "location": "5th floor, Anh Minh building, 36 Hoang Cau, Dong Da, Hanoi",
+    "information": {
+      "name": "Information",
+      "sub": {
+        "item_1": "Good prices every day",
+        "item_2": "Hot under 100k",
+        "item_3": "Discount code",
+        "item_4": "Contact us"
+      }
+    },
+    "client": {
+      "name": "Client",
+      "sub": {
+        "item_1": "Purchase policy",
+        "item_2": "Return policy",
+        "item_3": "Shipping policy",
+        "item_4": "Privacy Policyt",
+        "item_5": "Store commitment"
+      }
+    },
+    "instruct": {
+      "name": "Instruct",
+      "sub": {
+        "item_1": "Shopping guide",
+        "item_2": "Return instructions",
+        "item_3": "Instructions for transfer",
+        "item_4": "Instructions for installment payments",
+        "item_5": "Return instructions"
+      }
+    },
+    "accept_payment": {
+      "name": "Accept payment"
+    },
+    "follow_us": {
+      "name": "Follow us"
+    },
+    "policy": {
+      "item_1": {
+        "title": "Free game conversion",
+        "subtitle": "For orders over 500k"
+      },
+      "item_2": {
+        "title": "Secure payment",
+        "subtitle": "100% secure payment"
+      },
+      "item_3": {
+        "title": "24/7 customer support",
+        "subtitle": "Contact us now"
+      },
+      "item_4": {
+        "title": "Free returns",
+        "subtitle": "If the product is defective"
+      }
+    }
+  }
+}

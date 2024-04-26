@@ -1,0 +1,58 @@
+{
+  "footer": {
+    "location": "Tầng 5, tào Anh Minh, 36 Hoàng Cầu, Đống Đa, Hà Nội",
+    "information": {
+      "name": "Thông báo",
+      "sub": {
+        "item_1": "Giá tốt mỗi ngày",
+        "item_2": "Hot dưới 100k",
+        "item_3": "Mã giảm giá",
+        "item_4": "Liên hệ với chúng tôi"
+      }
+    }, 
+    "client": {
+      "name":"Khách hàng",
+      "sub": {
+        "item_1": "Chính sách mua hàng",
+        "item_2": "Chính sách đổi trả",
+        "item_3": "Chính sách vận chuyển",
+        "item_4": "Chính sách bảo mật",
+        "item_5": "Cam kết cửa hàng"
+      }
+    },
+    "instruct": {
+      "name":"Hướng dẫn",
+      "sub": {
+        "item_1": "Hướng dẫn mua hàng",
+        "item_2": "Hướng dẫn đổi trả",
+        "item_3": "Hướng dẫn chuyển khoản",
+        "item_4": "Hướng dẫn trả góp",
+        "item_5": "Hướng dẫn hoàn hàng"
+      }
+    },
+    "accept_payment": {
+      "name": "Chấp nhận thanh toán"
+    },
+    "follow_us": {
+      "name": "Theo dõi chúng tôi"
+    },
+    "policy": {
+      "item_1": {
+        "title": "Miễn phí vận chuyển",
+        "subtitle": "Cho đơn hàng hơn 500k"
+      },
+      "item_2": {
+        "title": "Thanh toán an toàn",
+        "subtitle": "100% thanh toán bảo mật"
+      },
+      "item_3": {
+        "title": "Hỗ trợ khách hàng 24/7",
+        "subtitle": "Liên hệ với chúng tôi ngay"
+      },
+      "item_4": {
+        "title": " Miễn phí hoàn hàng",
+        "subtitle": "Nếu sản phẩm có lỗi"
+      }
+    }
+  }
+}

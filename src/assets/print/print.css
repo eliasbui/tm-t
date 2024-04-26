@@ -1,0 +1,40 @@
+div {
+    width: 700px;
+    margin: 0 auto;
+}
+h5 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+table tbody tr {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+table tbody tr td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+table tbody tr td:nth-child(1) {
+    text-align: center;
+}
+
+table tbody tr td:nth-child(2) {
+    text-align: center;
+}
+
+table tbody tr td:nth-child(3) {
+    padding-left: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}

@@ -1,0 +1,36 @@
+<div *ngIf="!loading && total > 0" class="form-row has-data">
+  <div class="col-lg-3 d-flex justify-content-center justify-content-lg-start">
+    <b class="mt-3 total">{{ 'commonAction.total'| translate }}: {{total}}</b>
+  </div>
+  <div class="col-lg-6 d-flex justify-content-center">
+    <ul class="pagination">
+      <li>
+        <a (click)="move('first')"><i class="material-icons">first_page</i></a>
+      </li>
+      <li>
+        <a (click)="move('previous')"><i class="material-icons">chevron_left</i></a>
+      </li>
+      <li *ngFor="let item of pageArrays">
+        <a [class.inactive]="!item.active" [class.active]="item.value===page"
+          (click)="changePage(item)">{{item.value}}</a>
+      </li>
+      <li>
+        <a (click)="move('next')"><i class="material-icons d-md-inline-block">chevron_right</i></a>
+      </li>
+      <li>
+        <a (click)="move('last')"><i class="material-icons d-md-inline-block">last_page</i></a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-lg-3 d-flex align-items-center justify-content-center justify-content-lg-end">
+    <span class="mr-1">{{ 'pagination.size'| translate }}:</span>
+    <mat-form-field class="page-size">
+      <mat-select [(value)]="pageSize" (selectionChange)="onPageSizeChange($event)">
+        <mat-option *ngFor="let item of pageSizes" [value]="item">{{item}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>
+<div *ngIf="!loading && total === 0" class="text-center no-data">
+  <span>{{ 'commonAction.noData'| translate }}</span>
+</div>

@@ -1,0 +1,178 @@
+@import "../../../../styles/ultilities/functions.scss";
+@import "../../../../styles/ultilities/variable";
+
+
+.footer {
+  background-color: #1a2129;
+  .policy {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 40px 0;
+    border-bottom: 1px #232c35 solid;
+    @include max-screen(992px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include max-screen(460px) {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item {
+      position: relative;
+      padding-left: 68px;
+
+      .text {
+        font-size: 18px;
+        color: white;
+
+        &:hover {
+          text-decoration: none;
+          color: #00a6ea;
+        }
+
+        b {
+          display: block;
+          font-size: 14px;
+          color: #A9B2B9;
+          font-weight: 600;
+        }
+      }
+
+      .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: auto !important;
+
+        img {
+          height: 100%;
+          max-width: 100%;
+        }
+
+      }
+    }
+  }
+
+  .bottom {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    max-width: 1440px;
+    padding: 40px 0;
+    display: flex;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    .item_1 {
+      flex: 0 0 28%;
+      max-width: 28%;
+      height: max-content;
+      padding-left: 10px;
+      padding-right: 10px;
+      @include max-screen(992px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      .text {
+        padding-left: 30px;
+        color: #A9B2B9;
+        font-weight: 600;
+      }
+
+      .loca {
+        background: url("./../../../../assets/images/footer/addico.webp") 0 0 no-repeat;
+      }
+
+      .tel {
+        background: url("./../../../../assets/images/footer/phoneico.webp") 0 0 no-repeat;
+        margin-bottom: 15px !important;
+        width: 100%;
+        display: block;
+      }
+
+      .mail {
+        background: url("./../../../../assets/images/footer/mailico.webp") 0 0 no-repeat;
+        display: block;
+      }
+
+      a {
+        &:hover {
+          text-decoration: none;
+          color: #00a6ea;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .item {
+      flex: 0 0 18%;
+      max-width: 18%;
+      padding-left: 10px;
+      padding-right: 10px;
+      @include max-screen(992px) {
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+      @include max-screen(768px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      @include max-screen(460px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .title {
+        font-size: 20px;
+        margin-bottom: 30px;
+        margin-top: 18px;
+        color: #FFF;
+        font-weight: 600;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none outside;
+
+        li {
+          margin-bottom: 15px;
+
+          a {
+            color: #A9B2B9;
+            text-decoration: none;
+            cursor: pointer;
+            background-color: transparent;
+
+            &:hover {
+              text-decoration: none;
+              color: #00a6ea;
+            }
+          }
+        }
+      }
+
+      .payment {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 5px;
+
+        img {
+          margin-bottom: 5px;
+          max-height: 30px;
+        }
+      }
+    }
+  }
+}

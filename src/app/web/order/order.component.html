@@ -1,0 +1,190 @@
+<div class="container-order">
+  <h3>Thông tin thanh toán</h3>
+  <div class="orderPay">
+    <div class="orderPay-product">
+      <div class="px-10 pt-10">
+        <table class="orderPay-product-table thead">
+          <thead class="orderPay-product-table-thead">
+            <tr class="orderPay-product-table">
+              <th class="product">
+                <p>Sản phẩm</p>
+              </th>
+              <th class="price">Đơn giá</th>
+              <th class="quantity">Số lượng</th>
+              <th class="sum">Thành tiền</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="px-10">
+        <table class="orderPay-product-table tbody">
+          <tbody class="orderPay-product-table">
+            <tr *ngFor="let item of dataProduct">
+              <td class="product">
+                <div class="product-item">
+                  <div class="product-item-img">
+                    <img [src]="item.urlImage" alt="" />
+                  </div>
+                  <div class="product-item-text">
+                    <div class="product-item-text-title">
+                      {{ item.productName }}
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="price">{{ item.price | currency : "VND" : "" }} đ</td>
+              <td class="quantity">{{ item.quantity }}</td>
+              <td class="sum">
+                {{ item.price * item.quantity | currency : "VND" : "" }} đ
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="orderPay-product-node">
+        <form action="" class="orderPay-product-node-form">
+          <div>Lời nhắn:</div>
+          <input type="text" placeholder="Lưu ý cho cửa hàng" />
+        </form>
+      </div>
+      <div class="orderPay-product-total">
+        <p>Tổng số tiền {{ dataProduct.length }} sản phẩm</p>
+        <div>{{ totalAmount | currency : "VND" : "" }} đ</div>
+      </div>
+    </div>
+    <div class="orderPay-address">
+      <div class="orderPay-address-border"></div>
+      <div class="orderPay-address-title">
+        <div class="orderPay-address-title-icon">Phương thức vận chuyển:</div>
+        <mat-radio-group
+          aria-label="Select an option"
+          [(ngModel)]="selectedOptionConvertValue"
+          class="convertMethod"
+        >
+          <mat-radio-button
+            value="IN_STORE"
+            (click)="selectedOption('IN_STORE')"
+            >Nhận trực tiếp tại cửa hàng</mat-radio-button
+          >
+          <mat-radio-button
+            value="DELIVERY"
+            (click)="selectedOption('DELIVERY')"
+            >Giao hàng</mat-radio-button
+          >
+        </mat-radio-group>
+        <mat-error *ngIf="messageErrorConvert">
+          {{ messageErrorConvert }}
+        </mat-error>
+        <form
+          *ngIf="convertMethod"
+          [formGroup]="addressForm"
+          class="description-body"
+        >
+          <div class="input-group mb-20">
+            <label>Tên người nhận</label>
+            <input
+              formControlName="name"
+              autofocus
+              type="text"
+              placeholder="Tên người nhận"
+              (keydown.enter)="enter($event)"
+            />
+            <mat-error
+              *ngIf="submitted && !f.name.valid && f.name.errors.required"
+            >
+              {{ commonErrorCode.REQUIRED | translate }}
+            </mat-error>
+          </div>
+          <div class="input-group mb-20">
+            <label>Số điện thoại</label>
+            <input
+              formControlName="phoneNumber"
+              autofocus
+              type="text"
+              placeholder="Số điện thoại"
+              (keydown.enter)="enter($event)"
+            />
+            <mat-error
+              *ngIf="
+                submitted &&
+                !f.phoneNumber.valid &&
+                f.phoneNumber.errors.required
+              "
+            >
+              {{ commonErrorCode.REQUIRED | translate }}
+            </mat-error>
+          </div>
+          <div class="input-group mb-20">
+            <label>Địa chỉ</label>
+            <input
+              formControlName="address"
+              autofocus
+              type="text"
+              placeholder="Địa chỉ"
+              (keydown.enter)="enter($event)"
+            />
+            <mat-error
+              *ngIf="submitted && !f.address.valid && f.address.errors.required"
+            >
+              {{ commonErrorCode.REQUIRED | translate }}
+            </mat-error>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="orderPay-paymentMethods">
+      <div class="orderPay-paymentMethods-title">
+        <div>Phương thức thanh toán:</div>
+
+        <mat-radio-group aria-label="Select an option" class="paymentMethods">
+          <mat-radio-button value="1" class="item" (click)="selectedOptionPaymentMethods('PAYMENT_ON_DELIVERY')">
+            <img
+              src="../.../../../../assets/images/giao-hang-tan-noi-6.jpg"
+              alt="ảnh"
+            />
+            <p>Thanh toán khi nhận hàng</p>
+          </mat-radio-button>
+          <mat-radio-button value="2" class="item" (click)="selectedOptionPaymentMethods('ONLINE_PAYMENT')">
+            <img
+              src="../.../../../../assets/images/thanhtoantructuyen.png"
+              alt="ảnh"
+            />
+            <p>Thanh toán trức tuyến</p>
+          </mat-radio-button>
+        </mat-radio-group>
+        <mat-error *ngIf="messageErrorPaymentMethods">
+          {{ messageErrorPaymentMethods }}
+        </mat-error>
+      </div>
+      <div class="orderPay-paymentMethods-money">
+        <div class="orderPay-paymentMethods-money-item">
+          <div class="orderPay-paymentMethods-money-item-text">
+            Tổng tiền hàng
+          </div>
+          <div class="orderPay-paymentMethods-money-item-price">
+            {{ totalAmount | currency : "VND" : "" }} đ
+          </div>
+        </div>
+        <div class="orderPay-paymentMethods-money-item">
+          <div class="orderPay-paymentMethods-money-item-text">
+            Tổng thanh toán
+          </div>
+          <div class="orderPay-paymentMethods-money-item-price">
+            {{ totalAmount | currency : "VND" : "" }} đ
+          </div>
+        </div>
+      </div>
+      <div class="orderPay-paymentMethods-submit">
+        <div class="orderPay-paymentMethods-submit-item">
+          <div class="orderPay-paymentMethods-submit-item-text">
+            Nhấn "Đặt hàng" đồng nghĩa với việc bạn đồng ý tuân theo Điều khoản
+            cửa hàng
+          </div>
+          <div class="orderPay-paymentMethods-submit-item-btn">
+            <Button class="button" (click)="orderPay()"> Đặt hàng </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

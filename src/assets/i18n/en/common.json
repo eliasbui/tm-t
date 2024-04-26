@@ -1,0 +1,423 @@
+{
+  "add_to_cart": {
+    "code_00": "Cart added successfully",
+    "code_01": "Add cart failed"
+  },
+  "settings": "Settings",
+  "profile": "Profile",
+  "logout": "Logout",
+  "homepage": "Home",
+  "dashboard": "Dashboard",
+  "languageList": {
+    "Vietnamese": "Vietnamese",
+    "English": "English"
+  },
+  "language": "Language",
+  "title_confirm_dialog": "Message",
+  "title_yes": "Confirm",
+  "title_no": "Cancel",
+  "cancel": "Cancel",
+  "save": "Save",
+  "warning_language": "Please select a preferred language for your Dashboard, including date, time, and number formatting",
+  "selectlanguage": "Select language",
+  "phone": "Phone",
+  "sendemail": "Send Email",
+  "departmentLang": "Dept. of",
+  "createdate": "Created date",
+  "changeimage": {
+    "title": "Change Profile Image",
+    "chooseImageButton": "Choose Image",
+    "message": {
+      "wrongFormat": "File is not in the correct format",
+      "imageWrongFormat": "Image is not in the correct format",
+      "wrongFormatFile": "Please choose image with JPEG/JPG/PNG/PDF format !",
+      "risk_wrongFormatFile": "Please choose image with file XLSX/XLS !",
+      "overSize": "File exceeds maximum size 2MB"
+    },
+    "text": "Please select a JPG, JPEG, PNG format image up to 2MB.",
+    "size": "File exceeds maximum size",
+    "format": "File is malformed",
+    "success": "Successfully changed the avatar",
+    "note": "Click on image to change avatar"
+  },
+  "changeInfor": {
+    "title": "Edit Profile",
+    "name": "Display name",
+    "email": "Email",
+    "phone": "Phone",
+    "adress": "Address"
+  },
+  "forgotpassword": "Forgot Password?",
+  "emailaddress": "Email address",
+  "resetpassword": "Reset Password",
+  "changethere": "You must change your password in first login.",
+  "resethere": "Please enter the email address you have registered on the system",
+  "expire_otp": "OTP will be expired in 5 minutes",
+  "otp_expired": "OTP has expired",
+  "get_otp": "Get OTP",
+  "dialogSuccessResetPw": {
+    "submit": "Submit",
+    "mes-1": "OTP was sent to your email.",
+    "mes-2": "Please press Submit button and fill OTP to get new password."
+  },
+  "changePassword": {
+    "changePassword": "Change Password",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Re-enter password",
+    "confirmPasswordWarning": "To confirm, type the new password again.",
+    "newPasswordWarning": "The password must be 6-50 characters, and must not contain spaces.",
+    "confirm": "Submit",
+    "placeholder": {
+      "old": "Enter old password",
+      "new": "Enter new password",
+      "re-new": "Re-enter password"
+    },
+    "firstLogin": "Change password for the first time login",
+    "period": {
+      "text-1": "Your account password on the system will expire in",
+      "text-2": "more days",
+      "text-3": "Please enter the change password function to change your password. Your account will be locked if the password is overdue!"
+    }
+  },
+  "breadcrumb": {
+    "dashboard": "Dashboard",
+    "usermanage": "User manager",
+    "department": "Department management",
+    "profile": "Profile",
+    "detail": "Detail"
+  },
+  "title": {
+    "usermanage": "User manager"
+  },
+  "profileAccount": {
+    "language": "Language",
+    "phone": "Phone number",
+    "email": "Email",
+    "unit": "Department",
+    "save": "Update",
+    "username": "Username",
+    "fullName": "Full name",
+    "merchant": "Merchant",
+    "createdDate": "Creation time",
+    "edit": "Update",
+    "editlanguage": "Edit language",
+    "defaultLanguage": "Default display language",
+    "history": "Activity History",
+    "seeMore": "See more",
+    "validator": {
+      "required": "This field is required",
+      "success": "Your profile has been updated successfully",
+      "successPassword": "Password changed successfully",
+      "strongPassword": "Your password is not formatted correctly",
+      "equalPassword": "The passwords are not matching, please check again",
+      "currentPass": "The current password is incorrect",
+      "lengthPass": "Use 6 characters or more for your password"
+    }
+  },
+  "service-info": {
+    "title-main": "Service Information Management",
+    "btn_edit": "Edit",
+    "btn_update": "Update",
+    "btn_cancel": "Cancel",
+    "title_dialog": "Message",
+    "msg_dialog": "Your change information request is waitting for approval. We will response it in 72 hours",
+    "msg_thank": "Thank you for using our services.",
+    "btn_dialog": "Close",
+    "message": {
+      "require": "Please select at least 1 service."
+    },
+    "info": {
+      "title_prod": "Intefration information of real's enviroment",
+      "title_test": "Intefration information of test's enviroment",
+      "btn_refresh": "Refresh",
+      "publish_key": "Publish key",
+      "secret_key": "Secret key",
+      "merchantId": "Merchant ID"
+    },
+    "service": {
+      "title": "Paygate service",
+      "title_type": "Payment type",
+      "type": "Payment type",
+      "chanel": "Payment chanel",
+      "struc": "Structure integration",
+      "payment_service": "Payment service",
+      "up_service": "Additional service"
+    },
+    "fee": {
+      "title": "Fee service information",
+      "payment_type": "Payment type",
+      "fee_maintain": "Fee maintaince",
+      "fee_action": "Fee process",
+      "fee_pay": "Fee pay",
+      "fee_refund": "Fee refund"
+    },
+    "errors": {
+      "99": "System temporary unavailable. Please contact administrator for more detail",
+      "88": "The requested information is invalid",
+      "11": "Merchant status is invalid",
+      "03": "No information about this merchant exists"
+    },
+    "success": {
+      "payment-method": "Payment method has been updated successfully"
+    }
+  },
+  "error": {
+    "require": "This field is required",
+    "email-pattern": "Not a valid email address",
+    "email-invalid": "Email address is not registered on the system. Please check again!",
+    "format-email-invalid": "Format Email is not valid. Please check again!",
+    "phone-invalid": "Phone is not registered on the system. Please check again!",
+    "format-phone-invalid": "Format Phone is not valid (about 10-11 numbers). Please check again!",
+    "phone-pattern": " Not a valid phone number",
+    "password-mismatch": "Passwords do not match",
+    "minlength-6": "Your password will have from 6 to 50 characters.",
+    "maxlength": "Your text is too long",
+    "invalid-format": "Your password is not formatted correctly",
+    "invalid-format-ip": "Your IP address not formatted correctly",
+    "special-characters": "Not contain special characters.",
+    "not_match": "The passwords are not matching, please check again.",
+    "number-pattern": "This field only number",
+    "minlength-9": "Your Card ID will have 9 or 12 number.",
+    "minLengthPhone": "Your phone will have 10 number.",
+    "uppercase": "Format is not valid (only enter unsigned capital letters)",
+    "minLengthPan": "Pan will have from 8 to 19 number.",
+    "agentNameFormat": "Representative names cannot contain special characters, full-space and up to 50 characters.",
+    "taxCodeFormat": "Tax codes only enter numbers and are 10 or 13 digits long.",
+    "agentIdentityFormat": "Agent Identity only enter numbers and are 9 or 12 digits long.",
+    "panLength": "Beneficiary account must be between 8 and 19 characters in length",
+    "panFormat": "Invalid beneficiary account",
+    "phoneFormat": "Format Phone is invalid.",
+    "webFormat": "Format website is invalid.",
+    "name-format": "Incorrect format (contains no special characters, full-spaces and no more than 50 characters).",
+    "amount-format": "Price up to 9 digits long.",
+    "amount-min": "Product price must be greater than 0."
+  },
+  "notifications": {
+    "new": "New notifications",
+    "markRead": "Mark as read",
+    "markUnread": "Mark as unread",
+    "delete": "Delete",
+    "seeAll": "See all notifications",
+    "title": "Notification",
+    "action": "Action",
+    "noSelected": "No notifications have been selected yet",
+    "read": "Read",
+    "unread": "Unread",
+    "deleted": "Deleted",
+    "back": "Back",
+    "filter": {
+      "title": "Filter",
+      "all": "All",
+      "trans": "Transactions",
+      "update": "Update"
+    },
+    "errors": {
+      "99": "The system is temporarily down. Please contact the administrator."
+    },
+    "noData": "There are currently no new notifications"
+  },
+  "commonAction": {
+    "add": "New",
+    "edit": "Edit",
+    "export": "Export file",
+    "search": "Search",
+    "cancel": "Cancel",
+    "save": "Save",
+    "update": "Update",
+    "total": "Total",
+    "noData": "Not found",
+    "inQR": "Print QR code",
+    "action": "Confirm",
+    "close": "Close",
+    "download": "Download",
+    "copyURL": "Copy URL to clipboard",
+    "view": "View detail",
+    "resetPassword": "Reset Password"
+  },
+  "unit": {
+    "title": "Department management",
+    "unitName": "Department name",
+    "email": "Email address",
+    "status": "Status",
+    "createdDate": "Creation time",
+    "detail": {
+      "basicInfo": "Basic information"
+    },
+    "addUnit": "Add new department",
+    "updateUnit": "Update department information",
+    "fileName": "Department_",
+    "statusList": {
+      "Active": "Active",
+      "Locked": "Locked"
+    },
+    "addSuccess": "Add new department successfully",
+    "editSuccess": "Edit the department successfully"
+  },
+  "left-menu": {
+    "dashboard": "Dashboard",
+    "transaction": {
+      "manager": "Transaction",
+      "payment": "Payment",
+      "refund": "Refund"
+    },
+    "report": {
+      "title": "Report",
+      "revenue": "Revenue",
+      "money-transfer": "Money transference",
+      "finalization": "Finalization",
+      "fee": "Fee"
+    },
+    "cross-check": "Cross check",
+    "ruin-manager": {
+      "title": "Risk Management - BlackList",
+      "account": "Restricted e-wallet",
+      "card": "Restricted bank account",
+      "bin": "Restricted bin ribbon",
+      "ip": "Restricted IP address",
+      "business": "Restricted MCC",
+      "transaction": "Suspicious transactions"
+    },
+    "monitoring": "Monitoring",
+    "mcc-manager": "MCC manager",
+    "dvcntt-manager": {
+      "manager": "Merchant manager",
+      "profile": "Merchant profile",
+      "manager-dvcntt": "Sub-merchant manager",
+      "qrcode": "QR code manager"
+    },
+    "payment-link": "Payment link",
+    "create-order": "Create order",
+
+    "user-mangager": "User manager",
+    "dept-manager": "Dept. manager",
+    "pttt-manager": "PTTT manager",
+    "cost-manager": {
+      "manager": "Fee manager",
+      "for-dvcntt": "Profile merchant",
+      "for-agency": "Management merchant",
+      "for-qrcode": "Management QR code"
+    },
+    "trans-channel": "Trans channel manager",
+    "tcph-manager": "TCPH manager",
+    "tctt-manager": "TCTT manager",
+    "agency-manager": "Agency manager",
+    "service-info": "Service info",
+    "store-profile": "Store Profile",
+    "search-store": "Search Store",
+    "e-wallet": "Manage e-wallets",
+    "wallet-register": "Customer registers wallet",
+    "wallet-link": "Link/unlink wallet",
+    "wallet-casin": "Deposit transaction",
+    "wallet-cashout": "Withdrawal transaction",
+    "wallet-transfer": "Money transfer transaction",
+    "wallet-behalf-payment": "Payment transaction",
+    "e-wallet-report": {
+      "title": "E-wallet report",
+      "total-wallet": "Wallet registration amount",
+      "total-transaction": "Number of transactions",
+      "top-transaction": "Amount/Value"
+    }
+  },
+  "dashboard-page": {
+    "title": "Today's business results",
+    "chart-title": "Total sales",
+    "transaction-title": "Latest transaction",
+    "success_status": "Success",
+    "refund_status": "Refund",
+    "transactions": "Transactions",
+    "yesterday": "Compared to yesterday",
+    "last-month": "Compared to the same period last month",
+    "total-revenue": "Total sales",
+    "transaction-payment": "Payment transaction",
+    "transaction-refund": "Refund transaction",
+    "transaction-page": {
+      "transaction-code": "Transaction code",
+      "partner": "Partner",
+      "bank": "Bank",
+      "amount": "Total amount",
+      "merchant": "ICT",
+      "transaction-status": "Status",
+      "time": "Time",
+      "notfound": "No transactions found"
+    },
+    "fail": "Failed",
+    "success": "Success",
+    "wait": "Waiting for payment",
+    "day": "Day",
+    "today": "today",
+    "month": "Month",
+    "million": "Million",
+    "revenue": "Revenue",
+    "order": "Order",
+    "week": "Week",
+    "seemore": "See more",
+    "top5": "Top 5 best business IT units",
+    "transaction": "transaction",
+    "revenue-chart": {
+      "amount": "Amount",
+      "value": "Value",
+      "no-transaction": "No transaction yet"
+    },
+    "payment-status": {
+      "success": "Success",
+      "fail": "Fail",
+      "wait": "Processing",
+      "recorded": "Recorded",
+      "no-transaction": "No payment transaction yet"
+    },
+    "refund": {
+      "no-transaction": "No refunds yet"
+    },
+    "no-statistic": "No statistical data yet"
+  },
+  "status": {
+    "pending": "Pending",
+    "unsuccess": "Unsuccess",
+    "success": "Success"
+  },
+  "login": {
+    "user-name": "Username",
+    "password": "Password",
+    "remember-me": "Remember me",
+    "title": "Login",
+    "forgot-password": "Forgot password?",
+    "or": "Or",
+    "register": "Register",
+    "dev": "Dev by"
+  },
+  "register": {
+    "full-name": "Full name",
+    "password": "Password",
+    "confirm-password": "Confirm password",
+    "phone-number": "Phone number",
+    "title": "Register",
+    "cancel": "Cancel"
+  },
+  "reset_pw": {
+    "title": "Change passwords",
+    "ref": "Transaction code",
+    "otp": "OTP number",
+    "repw": "Re-Enter new password",
+    "newpw": "Enter new password",
+    "title-newpw": "New password",
+    "title-repw": "Confirm new password",
+    "success_get_otp": "Send OTP successfully. Please check your email to get it.",
+    "fail_get_otp": "Send OTP not successfully. Please try again."
+  },
+  "pagination": {
+    "size": "Page size"
+  },
+  "all": {
+    "status": "All statuses",
+    "merchant": "All merchants",
+    "sub-merchant": "All sub-merchants",
+    "qr": "All QR codes"
+  },
+  "function-role": "You do not have permission to perform this function",
+  "page-role": "You do not have permission to access this page",
+  "return-page": "Back to main page",
+  "session-timeout": "The session has expired. Please login again to continue using the system.",
+  "date-from": "From",
+  "date-to": "to"
+}

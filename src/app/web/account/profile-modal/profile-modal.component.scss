@@ -1,0 +1,27 @@
+.title {
+  position: relative;
+  padding: 10px 0;
+
+  i {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+  }
+}
+
+button {
+  min-width: 115px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-close {
+  background: none !important;
+}
+
+.dialog-content{
+  margin-top: 10px;
+}

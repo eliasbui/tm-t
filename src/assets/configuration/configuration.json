@@ -1,0 +1,14 @@
+{
+  "API_ENDPOINTS": {
+    "REAL_API_URL": "http://192.168.1.83:8099",
+    "IP_API_URL": "",
+    "SKIP_LOADER": "Skip-Loader",
+    "CHANGEAVATAR_API_URL": "/profile/edit-avatar",
+    "ADDNEWSUBMERCHANT_API_URL": "/sub-merchant/addnew",
+    "EDIT_ADDITIONAL_INFORMATION_API_URL": "/sub-merchant/edit-additional-info",
+    "CHANGEOTHERINFOR_API_URL": "/merchant/edit-additional-info",
+    "ADD_RISK": "/risk/addnew",
+    "REFUND_IMPORT": "/refund/file",
+    "WALLET_IFRAME_URL": "http://171.244.27.138:17227/e-wallet"
+  }
+}

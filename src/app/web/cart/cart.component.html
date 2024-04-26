@@ -1,0 +1,164 @@
+<div class="shoppingCart">
+  <div class="shoppingCart-blog">
+    <div class="shoppingCart-blog-left">
+      <table
+        *ngIf="productCart && productCart.length > 0"
+        class="shoppingCart-blog-left-table"
+      >
+        <thead class="shoppingCart-blog-left-table-thead">
+          <tr>
+            <th class="checkbox">
+              <input
+                type="checkbox"
+                #selectAllCheckbox
+                type="checkbox"
+                (change)="handleSelectAll($event)"
+              />
+            </th>
+            <th class="product">
+              <p>Sản phẩm</p>
+            </th>
+            <th class="quantity">Số lượng</th>
+            <th class="sum">Tổng cộng</th>
+          </tr>
+        </thead>
+      </table>
+      <table
+        *ngIf="productCart && productCart.length > 0"
+        class="shoppingCart-blog-left-table"
+      >
+        <tbody class="shoppingCart-blog-left-table-tbody">
+          <tr *ngFor="let item of productCart">
+            <td class="checkbox">
+              <input
+                type="checkbox"
+                [checked]="checkedItems.includes(item.productId)"
+                (change)="handleCheckboxChange(item.productId)"
+              />
+            </td>
+            <td class="product">
+              <div class="product-item">
+                <div class="product-item-img">
+                  <img [src]="item.urlImage" alt="" />
+                </div>
+                <div class="product-item-text">
+                  <div class="product-item-text-title">
+                    {{ item.productName }}
+                  </div>
+                  <div class="remove">
+                    <div (click)="removeProduct(item.productId)">
+                      <mat-icon>delete</mat-icon>
+                    </div>
+                  </div>
+                  <div class="price">
+                    {{ item.price | currency : "VND" : "" }} đ
+                  </div>
+                  <div class="quantity-blog quantity-rq">
+                    <button
+                      class="border border-slate-200 h-6 w-6 lg:h-8 lg:w-8"
+                      (click)="
+                        handleUpdateQuantity(
+                          item.productId,
+                          item.quantity,
+                          'decrease'
+                        )
+                      "
+                    >
+                      -
+                    </button>
+                    <input
+                      type="text"
+                      class=""
+                      [value]="item.quantity"
+                      readOnly
+                    />
+                    <button
+                      class="border border-slate-200 h-6 w-6 lg:h-8 lg:w-8"
+                      (click)="
+                        handleUpdateQuantity(
+                          item.productId,
+                          item.quantity,
+                          'increase'
+                        )
+                      "
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="quantity">
+              <div class="quantity-blog">
+                <Button
+                  class="border border-slate-200 h-6 w-6 lg:h-8 lg:w-8"
+                  (click)="
+                    handleUpdateQuantity(
+                      item.productId,
+                      item.quantity,
+                      'decrease'
+                    )
+                  "
+                >
+                  -
+                </Button>
+                <input
+                  type="text"
+                  readOnly
+                  class="border border-slate-200 h-6 w-6 lg:h-8 lg:w-8 text-center"
+                  [value]="item.quantity"
+                />
+                <Button
+                  class="border border-slate-200 h-6 w-6 lg:h-8 lg:w-8"
+                  (click)="
+                    handleUpdateQuantity(
+                      item.productId,
+                      item.quantity,
+                      'increase'
+                    )
+                  "
+                >
+                  +
+                </Button>
+              </div>
+            </td>
+            <td class="sum">
+              {{ item.price * item.quantity | currency : "VND" : "" }} đ
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div *ngIf="productCart && productCart.length < 1" class="text">
+        <div>
+          <img src="../../../assets/images/giohanh.png" alt="">
+        </div>
+        <div>Không có sản phẩm nào trong giỏ hàng</div>
+        <button (click) = "home()">Mua ngay</button>
+      </div>
+    </div>
+    <div
+      class="shoppingCart-blog-right"
+      *ngIf="productCart && productCart.length > 0"
+    >
+      <div class="shoppingCart-blog-right-item">
+        <p class="shoppingCart-blog-right-item-title">Tổng số mặt hàng</p>
+        <p>
+          <span> {{ totalAmount | currency : "VND" : "" }} </span>
+          <span>đ</span>
+        </p>
+      </div>
+      <hr />
+      <div class="shoppingCart-blog-right-item">
+        <p class="shoppingCart-blog-right-item-title">Tổng cộng</p>
+        <p>
+          <span> {{ totalAmount | currency : "VND" : "" }} </span>
+          <span>đ</span>
+        </p>
+      </div>
+      <div class="shoppingCart-blog-right-checkOut" (click)="order()">
+        Mua hàng
+      </div>
+    </div>
+  </div>
+</div>
